@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO 8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../Itens/Icons/logoSitePrincipal.png" type="image/x-icon">
+    <title>FoundJOB</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../Itens/imgs/menu.png" alt="MENU" class="imgMenuPrincipal" id='imagem' onClick="fechar()" onMouseOver="abrir()">
+        </div>
+            <ul id="popup" class="popup">
+            <li class="itemLiPopUp"><a href="landingPage.html">HOME</a></li>
+            <li class="itemLiPopUp" ><a href="escolha.html">Login</a></li>
+            <li class="itemLiPopUp" ><a href="../php/geral_estagios.php">Estagios</a></li>
+            <li class="itemLiPopUp" ><a href="#">Estagio Favoritos</a></li>
+            <li class="itemLiPopUp" ><a href="#">Curriculo</a></li>
+            <li class="itemLiPopUp" ><a href="#">Minha Conta</a></li>
+            </ul>
+    </header>
+    <div class="sobParteAzul">
+        <div class="img">
+            
+        </div>
+        <div class="texto">
+            <h1 class="foundjob">
+            FOUNDJOB
+            </h1>
+            <p class="texto2"> 
+            Faça login para ter acesso a todos os<br>nossos recursos.<br>
+            Caso não tenha feito sua conta ainda<br> cadastre-se para achar novos<br> estagiarios para sua empresa.
+            </p>
+        </div>
+    </div>
+
+    <div class="boderBodyEscopo">
+        <form class="formIndex" action="../php/processa_loginUsuario.php" method="POST">
+            <h1 class=" titulo">LOGIN</h1>
+            <div class="subir">
+            <input type="text" id="cpfLogin" placeholder="CPF" name="cpf" class="espaco">
+            <input type="password" id="senhaLogin" placeholder="senha" name="senha" class="espaco">
+            <button type="submit" value="entrar"class="espaco">LOGIN</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h3>Não tem conta ainda? <a href="cadastroUsuario.html">CADASTRE-SE</a></h3>
+    </footer>
+
+    
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
